@@ -1,0 +1,93 @@
+*{
+    font-family: 'Roboto', sans-serif;
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+header{
+    background-color:#EAC926;
+}
+main{
+    align-content: center;
+    text-align: center;
+    background-color:#ebebeb;
+    width: 90%;
+
+}
+
+footer{
+    background-color:#FFFFFF;  
+}
+
+p{font-size:12px;}
+
+a{
+    text-align: left;
+    color: #050505;
+    text-decoration: none;
+    font-size:12px;
+}
+
+
+main section .article{
+    padding: 15px;
+    text-align: left;
+    margin: 0px 5px 0px 5px;
+    border-top: 1px solid #ebebeb;
+}
+
+
+
+.icons{
+    padding-top: 10%;
+    text-align: center;
+    color:#1259c3;
+    font-size:30px;
+}
+
+.logoEnvio {
+    color:#39b54a;
+    font-size: 22px;
+}
+.burger-menu{
+    background-color:#1259c3;
+    text-align: center;
+    color:#FFFFFF;
+}
+
+.titular{
+    font-size:24px;
+    text-align: center;
+    padding-top:15px;
+    padding-bottom:15px;
+};
+
+
+
+main section .article div .precio{
+    font-size: 18px;
+}
+main section .article div .descuento{
+    font-size:16px;
+    color:#39b54a;
+}
+.textofooter{text-align:center;}
+
+#logo{text-indent: 5%;}
+#search-bar{
+    margin: 10px;
+    padding: 0px;
+}
+
+#credito{text-align: center;}
+ 
+@media (max-width: 360px){
+     body main section .article div .name{display:none;}
+     body header .enlaces{display:none;}
+}
+
+@media (min-width:361px){
+    body main section .article {box-shadow: 0px 0px 10px rgb(100,100,100);}
+    body header .burger-menu{display:none;}
+}

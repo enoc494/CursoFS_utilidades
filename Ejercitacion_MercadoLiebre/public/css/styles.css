@@ -7,17 +7,23 @@
 
 header{
     background-color:#EAC926;
+    width:100%
 }
 main{
     align-content: center;
-    text-align: center;
     background-color:#ebebeb;
     width: 90%;
+    margin: 0 auto;
 
+}
+
+main section{
+    align-content: center;
 }
 
 footer{
     background-color:#FFFFFF;  
+    width: 100%;
 }
 
 p{font-size:12px;}
@@ -29,15 +35,53 @@ a{
     font-size:12px;
 }
 
+main section .articulos{
+    display: flex;
+    flex-wrap: wrap;
+}
 
 main section .article{
     padding: 15px;
     text-align: left;
     margin: 0px 5px 0px 5px;
     border-top: 1px solid #ebebeb;
+    font-size: 18px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap:10px;
 }
 
+main section .article img{
+    width: 100%;
+}
 
+main section .article .logoEnvio {
+    color:#39b54a;
+    font-size: 22px;
+    align-self: flex-end;
+    justify-content: center;
+}
+
+main section .article .information{
+    display:flex;
+    justify-content: left;
+    gap: 10%;
+    align-items: baseline;
+}
+
+main section .article .information .precio{
+    font-size: 1em;
+}
+
+main section .article .information .descuento{
+    font-size: 0.89em;
+    color:#39b54a;
+}
+
+main section .article div h3{
+    font-size: 1em;
+}
 
 .icons{
     padding-top: 10%;
@@ -46,10 +90,7 @@ main section .article{
     font-size:30px;
 }
 
-.logoEnvio {
-    color:#39b54a;
-    font-size: 22px;
-}
+
 .burger-menu{
     background-color:#1259c3;
     text-align: center;
@@ -65,13 +106,7 @@ main section .article{
 
 
 
-main section .article div .precio{
-    font-size: 18px;
-}
-main section .article div .descuento{
-    font-size:16px;
-    color:#39b54a;
-}
+
 .textofooter{text-align:center;}
 
 #logo{text-indent: 5%;}
@@ -83,7 +118,7 @@ main section .article div .descuento{
 #credito{text-align: center;}
  
 @media (max-width: 360px){
-     body main section .article div .name{display:none;}
+     body main section .article div h3{display:none;}
      body header .enlaces{display:none;}
 }
 

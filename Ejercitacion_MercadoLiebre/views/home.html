@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
-
+    <head>
         <title> Mercado Liebre </title>
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -15,32 +15,30 @@
         
     <body>
         <header>
-            <div id=logo>
-                <img
-                  src="/images/logo-mercado-liebre.svg"
-                  alt="Mercado Liebre"
-                  width="50%"
-                />
-            </div>
-
-            <div id="search-bar">
-                <form action="post">
-                    <p>
-                        <input type="search"   
-                                size="25" 
-                                maxlength="50"
-                                placeholder="Buscar productos, marcas"/>
+            <div id="logo-search">
+                <div id="logo">
+                    <img
+                      src="/images/logo-mercado-liebre.svg"
+                      alt="Mercado Liebre"
+                    />
+                </div>
+    
+                <div id="search-bar">
+                    <form>
+                        <input type="text"   
+                                placeholder="Buscar productos, marcas..."
+                                />
                         <button type="button" id="button">
                             <i class="fas fa-search-dollar"></i>
                         </button>
-                    </p>
-                </form>
-            </div>  
-                  
-            <div id="credito">
-                <p><i class="fas fa-hand-holding-usd"></i> Compra en cuotas y sin tarjeta de credito</p>
-            </div>
+                    </form>
+                </div>
 
+                <div id="credito">
+                    <p><i class="fas fa-hand-holding-usd"></i> Compra en cuotas y sin tarjeta de credito</p>
+                </div>
+            </div>    
+  
             <div class="enlaces">
                 <ul type="none" >
                     <li><a href="" >Ofertas</a></li>
@@ -50,8 +48,8 @@
                 </ul>
 
                 <ul type="none" >
-                    <li><a href="" >Crea tu cuenta <i class="fas fa-id-card-alt"></i></a></li>
-                    <li><a href="" >Ingresa <i class="fas fa-arrow-circle-right"></i></i></a></li>
+                    <li><a href="/register" >Crea tu cuenta <i class="fas fa-id-card-alt"></i></a></li>
+                    <li><a href="/login" >Ingresa <i class="fas fa-arrow-circle-right"></i></i></a></li>
                     <li><a href="" >Mas compras <i class="fas fa-cart-arrow-down"></i></a></li>
                 </ul>
             </div>
@@ -78,13 +76,13 @@
                         <div class="logoEnvio">
                             <i class="fas fa-dolly"></i>
                         </div>
-                        <div class="information"  width="50%">
+                        <div class="information" >
                             <p class="precio">$6.770</p>
                             <p class="descuento">40% off</p>     
                         </div>
                         
-                        <div >
-                            <h3 class="name"> Cafetera Moulinex </h3>
+                        <div class="name" >
+                            <h3> Cafetera Moulinex </h3>
                         </div>
                     </div>
                     <div class="article">
@@ -97,12 +95,12 @@
                         <div class="logoEnvio">
                             <i class="fas fa-dolly"></i>
                         </div>
-                        <div class="information"       width="50%">
+                        <div class="information"      >
                             <p class="precio" >$230.000</p>
                             <p class="descuento">20% off</p> 
                         </div>            
-                        <div >
-                            <h3 class="name"> MacBook Pro 2019 </h3>
+                        <div   class="name"    >
+                            <h3> MacBook Pro 2019 </h3>
                         </div>
                     </div>
                     <div class="article">
@@ -115,12 +113,12 @@
                         <div class="logoEnvio">
                             <i class="fas fa-dolly"></i>
                         </div>
-                        <div class="information"      width="50%">
+                        <div class="information"     >
                             <p class="precio" >$230.000</p>
                             <p class="descuento">20% off</p> 
                         </div>            
-                        <div >
-                            <h3 class="name"> MacBook Pro 2019 </h3>
+                        <div   class="name"    >
+                            <h3> MacBook Pro 2019 </h3>
                         </div>
                     </div>
                     <div class = "article">
@@ -132,12 +130,12 @@
                         <div class="logoEnvio">
                             <i class="fas fa-dolly"></i>
                         </div>
-                        <div class="information"     width="50%">
+                        <div class="information"    >
                             <p class="precio" >$230.000</p>
                             <p class="descuento">20% off</p> 
                         </div>            
-                        <div >
-                            <h3 class="name"> MacBook Pro 2019 </h3>
+                        <div   class="name"    >
+                            <h3> MacBook Pro 2019 </h3>
                         </div>
                     </div>  
                 </div>                  
@@ -154,12 +152,12 @@
                         <div class="logoEnvio">
                             <i class="fas fa-dolly"></i>
                         </div>
-                        <div class="information"    width="50%">
+                        <div class="information"   >
                             <p class="precio" >$6.770</p>
                             <p class="descuento">40% off</p> 
                         </div>
-                        <div >
-                            <h3 class="name"> Cafetera Moulinex </h3>
+                        <div   class="name"   >
+                            <h3> Cafetera Moulinex </h3>
                         </div>
                     </div>
                     <div class = "article">
@@ -172,12 +170,12 @@
                         <div class="logoEnvio">
                             <i class="fas fa-dolly"></i>
                         </div>
-                        <div class="information"   width="50%">
+                        <div class="information"  >
                             <p class= "precio">$230.000</p>
                             <p class="descuento" >20% off</p> 
                         </div>            
-                        <div >
-                            <h3 class="name"> MacBook Pro 2019 </h3>
+                        <div   class="name"    >
+                            <h3> MacBook Pro 2019 </h3>
                         </div>
                     </div>
                     <div class = "article">
@@ -190,12 +188,12 @@
                         <div class="logoEnvio">
                             <i class="fas fa-dolly"></i>
                         </div>
-                        <div class="information"  width="50%">
+                        <div class="information" >
                             <p class="precio" >$230.000</p>
                             <p class="descuento">20% off</p> 
                         </div>            
-                        <div >
-                            <h3 class="name"> MacBook Pro 2019 </h3>
+                        <div   class="name"    >
+                            <h3> MacBook Pro 2019 </h3>
                         </div>
                     </div>
                     <div class = "article">
@@ -207,7 +205,7 @@
                         <div class="logoEnvio">
                             <i class="fas fa-dolly"></i>
                         </div>
-                        <div class="information" width="50%">
+                        <div class="information">
                             
                             <p class="precio" >$230.000</p>
                             <p class="descuento">20% off</p> 
@@ -216,8 +214,7 @@
                             <h3 class="name"> MacBook Pro 2019 </h3>
                         </div>
                     </div>
-                </div>
-                 
+                </div>      
             </section>
         </main>
         <footer>

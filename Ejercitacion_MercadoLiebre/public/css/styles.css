@@ -9,24 +9,75 @@ header{
     background-color:#EAC926;
     width:100%
 }
-main{
-    align-content: center;
-    background-color:#ebebeb;
-    width: 90%;
-    margin: 0 auto;
 
+
+#logo-search{
+    display:flex;
+    flex-wrap: wrap;
+    padding: 15px;
+    justify-content: space-around;
+    align-items: center;
 }
 
-main section{
-    align-content: center;
+#logo{
+    width:45%;}
+
+#search-bar{
+    margin: 10px;
+    padding: 0px;
+    overflow: hidden;
+    width:45%;
 }
 
-footer{
-    background-color:#FFFFFF;  
+
+#credito{text-align: center;}
+
+html .register form{
+    display: flex;
+    align-items: center; 
+    flex-direction: column;
+}
+html .login form{
+    display: flex;
+    align-items: center; 
+    flex-direction: column;
+}
+
+/*commentario*/
+form{
+    display: flex;
+    align-items: flex-end;
+}
+
+form input[type=text] {
+    padding: 3px;
+    border: none;
+    margin-top: 8px;
+    margin-right: 1px;
+    width: 80%;
+  }
+form input[type=button]{
+    width: 10%;
+}
+
+
+.enlaces{
+    display:flex;
+    justify-content: space-between;
+    padding-left: 5%;
+    padding-right: 5%;
     width: 100%;
 }
 
-p{font-size:12px;}
+.enlaces ul{
+    padding: 5px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.enlaces ul li{
+    padding: 5px;
+}
 
 a{
     text-align: left;
@@ -35,9 +86,33 @@ a{
     font-size:12px;
 }
 
+
+main{
+    align-content: center;
+    background-color:#ebebeb;
+    width: 100%;
+    margin: 0 auto;
+}
+
+main section{
+    align-content: center;
+}
+main section .titular{
+    width:100%;
+    font-size:4vw;
+    text-align: left;
+    padding-top:15px;
+    padding-bottom:15px;
+    padding-left: 30px;
+}
+
 main section .articulos{
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
+    width:100%;
+    justify-content: space-around;
+   
 }
 
 main section .article{
@@ -50,6 +125,8 @@ main section .article{
     flex-direction: column;
     justify-content: space-around;
     gap:10px;
+    width:100%;
+    background-color: #FFF;
 }
 
 main section .article img{
@@ -61,6 +138,7 @@ main section .article .logoEnvio {
     font-size: 22px;
     align-self: flex-end;
     justify-content: center;
+    width: 100%;
 }
 
 main section .article .information{
@@ -68,20 +146,33 @@ main section .article .information{
     justify-content: left;
     gap: 10%;
     align-items: baseline;
+    width: 100%
 }
 
 main section .article .information .precio{
     font-size: 1em;
+    width: 100%;
 }
 
 main section .article .information .descuento{
     font-size: 0.89em;
     color:#39b54a;
+    width: 100%;
 }
 
 main section .article div h3{
     font-size: 1em;
+    width:  100%;
 }
+footer{
+    background-color:#FFFFFF;  
+    width: 100%;
+}
+
+p{font-size:12px;}
+
+
+
 
 .icons{
     padding-top: 10%;
@@ -97,32 +188,30 @@ main section .article div h3{
     color:#FFFFFF;
 }
 
-.titular{
-    font-size:24px;
-    text-align: center;
-    padding-top:15px;
-    padding-bottom:15px;
-};
-
-
-
 
 .textofooter{text-align:center;}
 
-#logo{text-indent: 5%;}
-#search-bar{
-    margin: 10px;
-    padding: 0px;
-}
 
-#credito{text-align: center;}
  
+
 @media (max-width: 360px){
      body main section .article div h3{display:none;}
      body header .enlaces{display:none;}
+     main section .article{width:90%;}
 }
 
 @media (min-width:361px){
     body main section .article {box-shadow: 0px 0px 10px rgb(100,100,100);}
     body header .burger-menu{display:none;}
+}
+
+@media (min-width:481px) and (max-width:768px){
+    #logo-search div{width: 30%;}
+    main section .article{width:45%;}
+}
+
+/*any laptop to desktop*/
+@media (min-width: 769px){
+    #logo-search div{width: 30%;}
+    main section .article{width:22%;}
 }

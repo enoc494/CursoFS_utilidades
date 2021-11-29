@@ -222,6 +222,8 @@ footer section section .titular{
     padding-top:15px;
     padding-bottom:15px;
 }
+
+
 @media (min-width: 361px){
     main section article .description{
         display: block;
@@ -266,6 +268,7 @@ footer section section .titular{
         justify-content: center;
         align-items: baseline;
     }
+    footer section.copyright{align-self: flex-start ;}
     footer section section{
         width:33%
     }

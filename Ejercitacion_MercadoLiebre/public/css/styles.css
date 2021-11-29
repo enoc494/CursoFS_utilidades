@@ -93,6 +93,7 @@ header .form .submit:hover{
     padding: 5px;
 }
 
+header .banner{display:none;}
 a{
     text-align: left;
     color: #050505;
@@ -251,6 +252,20 @@ footer section section .titular{
     width: 30px;
 }
 
+/*estilos para register*/
+body.register {
+    width: 100%;
+    background-color: #ebebeb;
+    text-align: center;
+}
+body.register form{
+    font-size:10px;
+    padding:5px;
+    padding-bottom:15px;
+}
+body.register form div{
+    padding-top: 5px;
+}
 
 
 
@@ -260,7 +275,6 @@ footer section section .titular{
      body main section .article .name{opacity: 1;}
      body header .enlaces{display:none;}
      main section .article{width:90%;}
-
 }
 
 @media (min-width:361px){
@@ -269,12 +283,14 @@ footer section section .titular{
         max-height:auto;
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
+    header .banner{display:block;}
 }
 
 /*tablet*/
 @media (min-width:481px) and (max-width:768px){
     #logo-search div{width: 30%;}
     main section .article{width:45%;}
+    header .enlaces ul li a{font-size:2vw;}
     header .form{font-size:2vw; }
     header .form .submit{
         width: 12.5%;
@@ -287,6 +303,9 @@ footer section section .titular{
     footer section section .titular{font-size:4vw;}
     .textofooter{font-size:3vw;}
     footer section p{font-size:1.5em;}
+    body.register form{
+        font-size:25px;
+    }
 }
 
 /*any laptop to desktop*/
@@ -295,6 +314,7 @@ footer section section .titular{
     main section .article{width:22%;}
     header .form{ font-size:1.5vw; }
     header .form .submit{       width: 12.5%;   }
+    header .enlaces ul li a{font-size:1.5vw;}
     main section .titular{   font-size:2.5vw; }
     footer section{
         display:flex;
@@ -311,4 +331,5 @@ footer section section .titular{
     }
     footer section section .icons:hover{ color: #39b54a;}
     footer section section .titular{font-size:2vw;}
+    body.register form{   font-size:2vw;}
 }

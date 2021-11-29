@@ -51,53 +51,76 @@
         <div class="burger-menu">
             <i class="fas fa-bars"></i>
         </div>  
-        <div>   
+        <div class="banner">   
             <img src="/images/img-home-banner.jpg" 
                  alt="Banner"
                  width="100%"/>
         </div>
     </header>
     <body class="register">
+        <h2 >Registro de usuario nuevo</h2>
         <form action="/register" method="POST">
-            <label for="Nombre">Registro de usuario</label>
-            <input type="text" name="Nombre"  placeholder="Nombre y apellido"/>
-            <input type="text" name="NombreDeUsuario"  placeholder="Nombre de usuario@"/>
-
-            <input type="date" name="Nacimiento"  value="AAAA-MM-DD"/>
-            
-            <input type="textarea" name="Domicilio"  placeholder="Domicilio"/>
-            
-            <label for="TipoUsuario">Tipo de perfil:</label>
-            <select name="TipoUsuario" placeholder="Perfil" id="TipoUsuario">
-                <option value="Vender">Vender</option>
-                <option value="Comprar" selected>Comprar</option>
+            <div>
+                <label for="Nombre">Nombre:</label>
+                <input type="text" name="Nombre" 
+                        placeholder="Nombre y apellido"/>
+            </div>
+            <div>
+                <label for="NombreUsuario">Nombre de usuario:</label>
+                <input type="text" name="NombreUsuario"  
+                        placeholder="Nombre de usuario@"/>
+            </div>
+            <div>
+                <label for="Nacimiento">Fecha de nacimiento:</label>
+                <input type="date" name="Nacimiento"  value="AAAA-MM-DD"/>
+            </div>
+            <div>
+                <label for="Domicilio">Domicilio: </label>
+                <input type="textarea" name="Domicilio" 
+                       placeholder="Domicilio"/>
+            </div>
+            <div>
+                <label for="TipoUsuario">Tipo de perfil:</label>
+                <select name="TipoUsuario" placeholder="Perfil" id="TipoUsuario">
+                    <option value="Vender">Vender</option>
+                    <option value="Comprar" selected>Comprar</option>
             </select>
-
-            <label for="interes">Categorias de interés</label>
-            <input type="checkbox" name="interes" value="electro" id=electro/>
-            <label for =electro>Electro</label>
-
-            <input type="checkbox" name="interes" value="moda" id=moda/>
-            <label for =moda>Moda</label>
-
-            <input type="checkbox" name="interes" value="hogar" id=hogar/>
-            <label for =hogar> Hogar</label>
-
-            <input type="checkbox" name="interes" value="jugeteria" id=jugeteria/>
-            <label for =jugueteria> Jugueteria</label>
-
-            <input type="checkbox" name="interes" value="vidaSana" id=vidaSana/>
-            <label for =vidaSana>Vida sana</label>
-            
-            <label for =userImage>Imagen del usuario</label>
-            <input type="file" name="userImage" accept=".jpg">
-            <label>Contraseña</label>
-            <input type="password" name=password  min=10 required> 
-            <label>Confirma tu contraseña</label>
-            <input type="password" name=confirm required >
-            
-            <input type="reset" value="Vaciar"></input>
-            <input type="submit" value="Enviar"></input>
+            </div>
+            <div>
+                <label for="Interes">Categorias de interés:</label>
+                <br>
+                <input type="checkbox" name="interes" value="electro" id=electro/>
+                <label for =electro>Electro</label>
+                <br>
+                <input type="checkbox" name="interes" value="moda" id=moda/>
+                <label for =moda>Moda</label>
+                <br>
+                <input type="checkbox" name="interes" value="hogar" id=hogar/>
+                <label for =hogar> Hogar</label>
+                <br>
+                <input type="checkbox" name="interes" value="jugeteria" id=jugeteria/>
+                <label for =jugueteria> Jugueteria</label>
+                <br>
+                <input type="checkbox" name="interes" value="vidaSana" id=vidaSana/>
+                <label for =vidaSana>Vida sana</label>
+            </div>
+            <div>
+                <label for =userImage>Imagen del usuario:</label>
+                <br>
+                <input type="file" name="userImage" accept=".jpg">
+            </div>
+            <div>
+                <label>Contraseña: </label>
+                <input type="password" name=password  min=10 required> 
+            </div>
+            <div>
+                <label>Confirma tu contraseña: </label>
+                <input type="password" name=confirm required >
+            </div>
+            <div>
+                <input type="reset" value="Vaciar"></input>
+                <input type="submit" value="Enviar"></input> 
+            </div>
         </form>
     </body>    
 </html>

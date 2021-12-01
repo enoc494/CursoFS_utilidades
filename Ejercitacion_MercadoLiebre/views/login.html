@@ -57,12 +57,22 @@
         </div>
     </header>
     <body class="login">
+        <h2 >Ingrese sus datos de usuario</h2>
         <form action="/login" method="POST">
-            <label for="Nombre">Login</label>
-            <input type="text" name="NombreDeUsuario" id="campoNombre"  placeholder="Nombre de usuario@" />
-            <label>Contraseña</label>
-            <input type="password" name = password >
-            <input type="submit" value="Enviar" onclick="validar(event)"></input>
+            <div>
+                <label for="Nombre">Login</label>
+                <input type="text" name="NombreDeUsuario" 
+                       id="campoNombre"  placeholder="Nombre de usuario@" />    
+            </div>
+            <div>
+                <label>Contraseña</label>
+                <input type="password" name = password >
+            </div>
+            <div>
+                <input type="submit" value="Enviar" 
+                       onclick="validar(event)"></input>
+            </div>
+            
         </form>
     </body>  
     <script>

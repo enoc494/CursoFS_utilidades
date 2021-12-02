@@ -282,6 +282,38 @@ body.login form div{
     padding-top: 5px;
 }
 
+div.CuadriculaCategorias{
+    display:flex;
+    flex-direction: column;
+    flex-wrap:wrap;
+    align-items: center;
+    justify-content:space-around;
+    height:50vh;
+    padding:5px;
+}
+div.CuadriculaCategorias label,
+div.CuadriculaCategorias input{
+    height:5%;
+}
+div.CuadriculaCategorias label[for="Interes"]{
+    width:100%;
+}
+
+/*detallando botones*/
+div input[type=submit],
+div input[type=reset]{
+    background-color:#0044AA;
+    color: #FFF;
+    border-radius: 5px;
+    padding: 3px;
+    transition: color 200ms;
+}
+div input[type=reset]{
+    background-color:#DD0000;
+}
+div input:hover{
+    color:#CCC;
+}
  
 
 @media (max-width: 360px){

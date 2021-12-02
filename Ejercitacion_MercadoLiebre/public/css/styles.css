@@ -253,32 +253,32 @@ footer section section .titular{
 }
 
 /*estilos para register*/
-body.register {
+main.register {
     width: 100%;
     background-color: #ebebeb;
     text-align: center;
 }
-body.register form{
+main.register form{
     font-size:10px;
     padding:5px;
     padding-bottom:15px;
 }
-body.register form div{
+main.register form div{
     padding-top: 5px;
 }
 /* Estilos para login */
-body.login h2{ padding-top: 7vh;}
-body.login{
+main.login h2{ padding-top: 7vh;}
+main.login{
     width:100%;
     background-color: #ebebeb;
     text-align: center;
 }
-body.login form{
+main.login form{
     font-size:10px;
     padding:5px;
     padding-bottom:15px;
 }
-body.login form div{
+main.login form div{
     padding-top: 5px;
 }
 
@@ -317,13 +317,13 @@ div input:hover{
  
 
 @media (max-width: 360px){
-     body main section .article .name{opacity: 1;}
-     body header .enlaces{display:none;}
+     main section .article .name{opacity: 1;}
+     header .enlaces{display:none;}
      main section .article{width:90%;}
 }
 
 @media (min-width:361px){
-    body header .burger-menu{display:none;}
+    header .burger-menu{display:none;}
     main section .article:hover{
         max-height:auto;
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
@@ -348,10 +348,10 @@ div input:hover{
     footer section section .titular{font-size:4vw;}
     .textofooter{font-size:3vw;}
     footer section p{font-size:1.5em;}
-    body.register form{
+    main.register form{
         font-size:25px;
     }
-    body.login form{
+    main.login form{
         font-size:25px;
     }
 }
@@ -379,6 +379,6 @@ div input:hover{
     }
     footer section section .icons:hover{ color: #39b54a;}
     footer section section .titular{font-size:2vw;}
-    body.register form{   font-size:2vw;}
-    body.login form{   font-size:2vw;}
+    main.register form{   font-size:2vw;}
+    main.login form{   font-size:2vw;}
 }

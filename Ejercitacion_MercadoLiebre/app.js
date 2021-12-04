@@ -21,7 +21,14 @@ app.get("/login", (req,res)=>{
 });
 
 //Preferencialmente al final
+/*
 app.listen(3030, ()=> {
+    console.log(
+    `Servidor activo en el puerto ${puerto}`
+    );
+});
+*/
+app.listen(process.env.PORT || puerto, ()=> {
     console.log(
     `Servidor activo en el puerto ${puerto}`
     );
